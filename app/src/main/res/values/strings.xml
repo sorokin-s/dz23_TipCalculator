@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">dz23_TipCalculator</string>
+    <string name="tVeiw_tipcalculator">Калькулятор чаевых</string>
+    <string name="check">Cчёт</string>
+    <string name="numbergeuests">Кол-во гостей</string>
+    <string name="tippercentage">Процент чаевых</string>
+    <string name="tipPercent">Процент чаевых:</string>
+    <string name="paymentCheck">Счет к оплате:</string>
+    <string name="tipAmount">Сумма чаевых:</string>
+    <string name="splitCheck">Сумма на гостя:</string>
+    <string name="payment">Перейти к оплате</string>
+    <string name="reset">Сброс</string>
+    <string name="exit">Выход</string>
+    <string name="tip">0 %</string>
+    <string name="currency">0 руб.</string>
+</resources>

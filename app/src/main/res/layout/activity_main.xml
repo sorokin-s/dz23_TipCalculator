@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tVeiw_tipcalculator"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_margin="10dp"
+         />
+
+    <EditText
+        android:id="@+id/editTextCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        android:hint="@string/check"/>
+
+    <EditText
+        android:id="@+id/editTextNumGuests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/numbergeuests"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/tViewlblTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:text="@string/tipPercent" />
+
+        <TextView
+            android:id="@+id/tViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/tip"/>
+        <SeekBar
+            android:id="@+id/sBarTip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:min="0"
+            android:max="30"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        >
+        <TextView
+            android:id="@+id/tViewLblTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:text="@string/tipAmount"/>
+        <TextView
+            android:id="@+id/tViewTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/currency"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:id="@+id/tViewLblPaymentCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:text="@string/paymentCheck" />
+        <TextView
+            android:id="@+id/tViewPaymentCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/currency"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/tViewLblSplitCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:text="@string/splitCheck" />
+        <TextView
+            android:id="@+id/tViewSplitCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/currency"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cafe001"/>
+    <Button
+        android:id="@+id/btnPyament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20sp"
+        android:text="@string/payment"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20sp"
+        android:text="@string/reset"/>
+
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/exit"
+        android:textSize="20sp" />
+
+</LinearLayout>
